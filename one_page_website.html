@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sweet Spot - Desserts</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f7f3ef;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      color: #333;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #3a3a3a;
+      color: #f9b208;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 2rem;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #f9b208;
+    }
+
+    /* About Section */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 30px auto;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h2 {
+      font-family: 'Brush Script MT', cursive;
+      color: #f9b208;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Form */
+    form {
+      display: inline-block;
+      text-align: left;
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    input[type="submit"] {
+      background-color: #f9b208;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e19a06;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    🍰 The Sweet Spot
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="home">
+    <h2>About</h2>
+    <p>Welcome to <strong>The Sweet Spot</strong> — a dessert lover’s paradise! From classic cakes to creamy pastries, every treat is crafted to bring a smile to your face. Indulge in our collection of delightful desserts and let sweetness fill your day!</p>
+  </section>
+
+  <section id="gallery">
+  <h2>Our Desserts</h2>
+  <div class="gallery">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/chocolate-lava-cake-lead-65c2505660bd3.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Chocolate Lava Cake">
+    <img src="https://www.elmundoeats.com/wp-content/uploads/2024/06/A-slice-of-no-bake-strawberry-cheesecake-1.jpg" alt="Strawberry Cheesecake">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Cupcake">
+  </div>
+</section>
+
+<style>
+#gallery{text-align:center;padding:40px;background:#fff8f0;}
+#gallery h2{color:#f5a623;font-family:'Brush Script MT',cursive;}
+.gallery{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;}
+.gallery img{width:250px;border-radius:10px;transition:.3s;}
+.gallery img:hover{transform:scale(1.05);}
+</style>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Want to place a dessert order or host a sweet event? Fill in your details below!</p>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 The Sweet Spot | Designed by Idil
+  </footer>
+
+</body>
+</html>

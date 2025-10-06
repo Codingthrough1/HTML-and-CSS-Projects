@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Movie Showtimes</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <style>
+        /* --- BACKGROUND & BODY STYLES --- */
+        body {
+            /* Dark background color for a cinema look */
+            background-color: #121212; 
+            /* Subtle, repeating, noise-like texture for an attractive, grainy effect (optional but recommended) */
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 2px 2px;
+            color: #f8f9fa; /* Light text color for the body */
+        }
+
+        /* --- NAVIGATION BAR STYLES --- */
+        .navbar-custom {
+            background-color: #008080; /* Dark Teal/Cyan for a strong header color */
+        }
+        .navbar-custom .nav-link, .navbar-custom a {
+            color: #f8f9fa; /* White text for links */
+        }
+        .navbar-custom .nav-link:hover {
+            color: #ffc107; /* Yellow highlight on hover */
+        }
+        .search-btn {
+            background-color: #dc3545; /* Red button for contrast */
+            border-color: #dc3545;
+        }
+
+        /* --- CARD & CONTENT STYLES --- */
+        /* Make the cards white so the text remains highly readable on the dark background */
+        .card {
+            background-color: #ffffff;
+            color: #212529; /* Dark text inside the cards */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        }
+        .card-img-top {
+            /* Ensures images fill the card width nicely */
+            width: 100%;
+            height: 300px; /* Standardized height for visual consistency */
+            object-fit: cover; /* Crops image to fit without distortion */
+        }
+        .card-deck {
+            margin-bottom: 3rem; 
+        }
+        .badge-info {
+            margin-right: 0.25rem;
+            margin-top: 0.5rem;
+            /* Changing the default blue to a slightly darker blue that looks better on a white card */
+            background-color: #17a2b8 !important; 
+        }
+        
+        /* --- SECTION HEADINGS --- */
+        #showtimes h2, #deals h2 {
+            color: #ffc107; /* Highlight headings with yellow color */
+        }
+        #deals {
+            background-color: #212529; /* Dark background for the Deals section */
+            padding: 4rem 0 !important;
+        }
+        #deals .display-4 {
+            color: #ffc107; /* Yellow heading for the movie club CTA */
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <a class="navbar-brand text-white" href="#">Movie Times</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#showtimes">Showtimes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#deals">Deals</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary search-btn my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        
+        <section id="about" class="pt-4 pb-5">
+            <h2 class="mb-4">About Our Cinema</h2>
+            <p>Welcome to the best place to catch the latest blockbusters! We offer premium seating, the best snacks, and the most anticipated films in a comfortable and immersive environment.</p>
+        </section>
+        
+        <section id="showtimes" class="pt-4">
+            <h2 class="mb-4">Showtimes:</h2>
+            
+            <div class="card-deck">
+                
+                <div class="card">
+                    <img class="card-img-top" src="images/kong.jpg" alt="Kong Skull Island Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Kong Skull Island</h5>
+                        
+                        <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden.</p>
+                        
+                        <p class="mb-0">
+                            <span class="badge badge-pill badge-info">1:00pm</span>
+                            <span class="badge badge-pill badge-info">3:00pm</span>
+                            <span class="badge badge-pill badge-info">5:30pm</span>
+                            <span class="badge badge-pill badge-info">7:00pm</span>
+                            <span class="badge badge-pill badge-info">9:30pm</span>
+                        </p>
+                        </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="images/ghost.jpg" alt="Ghost in the Shell Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Ghost in the Shell</h5>
+                        
+                        <p class="card-text">In the near future, Major Killion is the first of her kind: A human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.</p>
+                        
+                        <p class="mb-0">
+                            <span class="badge badge-pill badge-info">1:00pm</span>
+                            <span class="badge badge-pill badge-info">3:00pm</span>
+                            <span class="badge badge-pill badge-info">5:30pm</span>
+                            <span class="badge badge-pill badge-info">7:00pm</span>
+                            <span class="badge badge-pill badge-info">9:30pm</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="card-img-top" src="images/beauty.jpg" alt="Beauty and the Beast Poster">
+                    <div class="card-body">
+                        <h5 class="card-title">Beauty and the Beast</h5>
+                        
+                        <p class="card-text">A selfish prince is cursed to become a monster for the rest of his life, unless he learns to fall in love with a beautiful young woman, he keeps prisoner.</p>
+                        
+                        <p class="mb-0">
+                            <span class="badge badge-pill badge-info">1:00pm</span>
+                            <span class="badge badge-pill badge-info">3:00pm</span>
+                            <span class="badge badge-pill badge-info">5:30pm</span>
+                            <span class="badge badge-pill badge-info">7:00pm</span>
+                            <span class="badge badge-pill badge-info">9:30pm</span>
+                        </p>
+                    </div>
+                </div>
+            </div> </section> <section id="deals" class="text-center">
+             <h2 class="display-4">SIGN UP FOR MOVIE CLUB</h2>
+             <p class="lead text-white-50 mt-3 mb-0">Get exclusive deals, discounts, and advance screening tickets!</p>
+             <button class="btn btn-warning btn-lg mt-4">Join Now</button>
+        </section>
+        
+    </div> <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>

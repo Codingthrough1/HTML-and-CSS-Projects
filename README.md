@@ -9,5 +9,5 @@ It includes practice exercises, sample code, and completed projects that demonst
 - Responsive design
 - Web accessibility
 - Version control using GitHub
+- Portfolio website using HTML and CSS
 
-Each project will be pushed here as I progress through the course.

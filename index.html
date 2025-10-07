@@ -1,13 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idil Shire | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <style>
+    /* Background and basic styling */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a72, #009ffd);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* Navigation */
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c6ff;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .highlight {
+      color: #00c6ff;
+    }
+
+    .btn {
+      background: #00c6ff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #007bff;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
+      margin: 20px auto;
+      width: 90%;
+      border-radius: 20px;
+    }
+
+    h2 {
+      color: #00c6ff;
+      margin-bottom: 20px;
+    }
+
+    /* Projects */
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.8);
+      font-size: 0.9em;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Hello from my HTML and CSS Projects Repository!</h1>
-    <p>This is my first test file added through GitHub Desktop.</p>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hello, I'm <span class="highlight">Idil Shire</span></h1>
+    <p>A passionate web developer & educator in Software and Web Development.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m Idil, a passionate learner currently pursuing a course in Software and Web Development. I have a keen interest in coding and creating interactive, user-friendly websites. Through my course, I’m gaining hands-on experience with HTML, CSS, JavaScript, and other programming tools that help bring creative ideas to life on the web.
+    </p>
+    <p>
+      I enjoy problem-solving, building projects, and continuously learning new technologies to enhance my development skills.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1" />
+        <h3>Student Grade Calculator</h3>
+        <p>A web app built with Python that calculates average grades and displays performance.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2" />
+        <h3>Personal Portfolio Website</h3>
+        <p>This site showcases my work, skills, and GitHub projects using only HTML & CSS.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Project 3" />
+        <h3>Math Game for Kids</h3>
+        <p>An interactive quiz app developed for grade 3 students to make math fun!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Section -->
+  <section id="github">
+    <h2>GitHub</h2>
+    <p>Check out my projects on GitHub:</p>
+    <a href="https://github.com/Idil" target="_blank" class="btn">Visit My GitHub</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to collaborate or discuss opportunities, reach out!</p>
+    <ul>
+      <li>Email: <a href="mailto:Idil.shire@example.com">Idil.shire@example.com</a></li>
+      <li>Location: Canada</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Idil | Built with ❤️ using HTML & CSS</p>
+  </footer>
 </body>
 </html>
-

@@ -1,0 +1,36 @@
+/* Page background and text style */
+body {
+  background-color: #f0f8ff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading style */
+h1 {
+  color: #0078D7;
+  margin-top: 30px;
+}
+
+/* Video container styling */
+.video-container {
+  margin: 20px auto;
+  width: fit-content;
+  border: 3px solid #0078D7;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animated box style */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 30px auto;
+  position: relative;
+  border-radius: 10px;
+}
